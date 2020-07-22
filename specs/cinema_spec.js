@@ -35,7 +35,8 @@ describe('Cinema', function () {
   });
 
   it('should be able to find a film by title', function() {
-    
+    const actual = cinema.findFilmByTitle('Black Panther');
+    assert.deepStrictEqual(actual, blackPanther);
   });
 
 
