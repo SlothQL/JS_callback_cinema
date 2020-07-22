@@ -27,10 +27,10 @@ Cinema.prototype.totalRunningTime = function() {
 }
 
 Cinema.prototype.filmsByProperty = function(property, value) {
-  return this.films.filter(film => property === value)
-  //property film.year
-  //value 2017
-}
+  return this.films.filter(film => {
+    return film[property] === value;
+  });
+};
 
 
 
