@@ -55,7 +55,11 @@ describe('Cinema', function () {
     assert.equal(actual, false);
   });
 
-  it('should be able to check whether all films are over a particular length');
+  it('should be able to check whether all films are over a particular length', function() {
+    const actual = cinema.filmLength(96);
+    assert.strictEqual(actual, false);
+  });
+
   it('should be able to calculate total running time of all films');
 
 });
